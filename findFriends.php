@@ -24,7 +24,7 @@
 	}
 
 	if(isset($_POST['friendEmail']) ) {
-
+		echo("Request sent");
 		$sql_addreq = "SELECT user_id FROM users WHERE email IN (:first, :second) ORDER BY FIELD(email ,:first,:second)" ;
 
 		$stmt = $pdo->prepare($sql_addreq);
