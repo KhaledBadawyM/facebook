@@ -7,6 +7,7 @@
 
 		echo '<table border="1">'."\n";
 		foreach ($rows as $row) {
+			if($row['email']==$_GET['email'])continue ;
 			echo "<tr><td>";
 			echo ($row['firstname']);
 			echo ("</td<td>  ");

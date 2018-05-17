@@ -8,12 +8,16 @@
 	if(isset($_POST['notifications']))
 	{
 		header("Location:notifications.php?email=".urlencode($_GET['email']));
-
 	}
 
 	if(isset($_POST['friends']))
 	{
 		header("Location:friends.php?email=".urlencode($_GET['email']));
+	}
+
+	if(isset($_POST['recivedMassage']))
+	{
+		header("Location:recivedMassage.php?email=".urlencode($_GET['email']));
 	}
 
 	
@@ -29,6 +33,7 @@
 		<input type="submit" name="fideFriends" value="Find Friends">
 		<input type="submit" name="notifications" value="Notifications">
 		<input type="submit" name="friends" value="Friends">
+		<input type="submit" name="recivedMassage" value="Recived Massages">
 	</form>
 
 	
